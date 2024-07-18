@@ -22,7 +22,7 @@ def teams_screen(screen, WIDTH, HEIGHT, font):
     # Calculate button positions before the main loop
     title_x = WIDTH // 2
     title_y = HEIGHT // 6
-    button_texts = ["2", "3", "4"]
+    button_texts = ['2', '3', '4']
     button_x_positions = [
         WIDTH // 2 - BUTTON_WIDTH - BUTTON_MARGIN,
         WIDTH // 2,
@@ -30,11 +30,11 @@ def teams_screen(screen, WIDTH, HEIGHT, font):
     ]
     buttons = [
         pygame.Rect(button_x_positions[i] - BUTTON_WIDTH // 2, title_y + 50, BUTTON_WIDTH, BUTTON_HEIGHT)
-        for i in range(3)
+        for i in range(len(button_texts))
     ]
 
     # Return to main menu rectangle and text
-    return_button_text = "Return to Main Menu"
+    return_button_text = 'Return to Main Menu'
     button_text_rect = draw_text(return_button_text, font, WHITE, screen, WIDTH // 2, HEIGHT - BUTTON_HEIGHT // 2 - 20)
     return_button_width = button_text_rect.width + 40  # Add padding around the text
     return_button = pygame.Rect((WIDTH - return_button_width) // 2, HEIGHT - BUTTON_HEIGHT - 20, return_button_width, BUTTON_HEIGHT)
@@ -65,7 +65,7 @@ def teams_screen(screen, WIDTH, HEIGHT, font):
                     if button.collidepoint(mouse_x, mouse_y):
                         game_screen(screen, WIDTH, HEIGHT, font, i + 2)  # start game with number of teams
 
-        draw_text("How many teams?", font, WHITE, screen, title_x, title_y)
+        draw_text('How many teams?', font, WHITE, screen, title_x, title_y)
 
         # Draw team buttons
         for i, text in enumerate(button_texts):

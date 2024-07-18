@@ -4,6 +4,9 @@ from back import Board
 import os
 
 def load_game(screen, WIDTH, HEIGHT, font):
+    '''
+    Loads a game from 'scrabble_game.json'.
+    '''
     filename = 'scrabble_game.json'
 
     # if file doesn't exist in current directory, go back to main menu

@@ -44,7 +44,7 @@ RULES_TEXT = [
     [
         "BLANK TILE",
         "1. Blank tiles can be used as any letter.",
-        "2. When a blank is played, it will remain in the game as the letter it substituted for."
+        "2. When a blank is played, it will remain the letter it was played as."
     ],
     # page 6 (tile values)
     [
@@ -62,10 +62,10 @@ RULES_TEXT = [
     [
         "SPECIAL CELLS",
         "Center: The starting word must go through the center of the board.",
-        "Double Letter: Light blue cells double the value of the tile placed on that cell.",
-        "Triple Letter: Steel blue cells triple the value of the tile placed on that cell.",
-        "Double Word: Light pink cells double the value of the word placed thru that cell.",
-        "Triple Word: Steel pink cells triple the value of the word placed thru that cell.",
+        "2L: Light blue cells double the value of the tile placed on that cell.",
+        "3L: Steel blue cells triple the value of the tile placed on that cell.",
+        "2W: Light pink cells double the value of the word placed thru that cell.",
+        "3W: Steel pink cells triple the value of the word placed thru that cell.",
         "",
         "Note: These extra point cells can only be used ONCE."
     ],
@@ -81,17 +81,18 @@ RULES_TEXT = [
     # page 9 (replacing tiles)
     [
         "REPLACING TILES",
-        "Once tiles are played, teams will draw tiles (without looking) until they have 7."
+        "Once tiles are played, teams will draw tiles until they have 7."
     ],
     # page 10 (50 pt bonus)
     [
         "50 POINT BONUS",
-        "A team receives an extra 50 points when using all 7 tiles to make a word."
+        "A team receives an extra 50 points when using all 7 tiles."
     ],
     # page 11 (the end)
     [
         "THE END",
-        "Once all tiles are gone from the bag and a team has used all of their tiles, the game ends."
+        "Once all tiles are gone from the bag and",
+        "a team has used all their tiles, the game ends."
     ],
     # page 12 (dictionary)
     [
@@ -103,7 +104,7 @@ RULES_TEXT = [
         "CONTROLS",
         "1. Click on a cell and enter a letter.",
         "2. If a tile is blank, enter '_'. This will prompt you to enter a letter.",
-        "3. Click the 'End turn' button after you played a word, exchanged tiles, or passed."
+        "3. Click the 'End turn' button after you played a word, exchanged, or passed."
     ],
     # page 14 (features)
     [
@@ -114,8 +115,8 @@ RULES_TEXT = [
     # page 15 (autosave)
     [
         "AUTOSAVE",
-        "After every turn, the game will automatically be saved to a '.pkl' file.",
-        "When the 'LOAD GAME' is clicked on the main menu, it will..."
+        "After every turn, the game will automatically be saved to a '.json' file.",
+        "When 'LOAD GAME' is clicked, it will load 'scrabble_game.json'."
     ]
 ]
 
