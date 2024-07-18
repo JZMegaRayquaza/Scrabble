@@ -36,7 +36,7 @@ The digital board is used alongside your physical Scrabble tiles to help calcula
   - **Placed Tiles**: These will be outlined in BLACK.
   - **Active Tile**: This will be outlined in GREEN.
 
-- **End Turn**: After clicking the End Turn button, the used bonuses will be removed both visually and internally, and the turn will end. The game follows the normal Scrabble rules.
+- **End Turn**: After clicking the End Turn button, the used bonuses will be removed both visually and internally, and the turn will end.
 
 ## Normal Scrabble Rules
 
