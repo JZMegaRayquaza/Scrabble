@@ -2,6 +2,10 @@
 
 Welcome to the Scrabble Game! This application provides a digital interface to enhance your physical Scrabble playing experience. Here's a guide to help you get started.
 
+### Code
+- **App Download**: Download ScrabbleApp.exe
+- **Python files**: Code behind the app
+
 ## Features
 
 - **Main Menu**: Navigate through the main menu with four buttons:
