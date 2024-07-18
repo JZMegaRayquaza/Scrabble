@@ -41,11 +41,3 @@ The digital board is used alongside your physical Scrabble tiles to help calcula
 ## Normal Scrabble Rules
 
 This version of Scrabble adheres to the standard Scrabble rules, with the added functionality of a digital board for convenience.
-
----
-
-Feel free to reach out if you have any questions or need further assistance. Enjoy your game!
-
----
-
-You can customize and expand this README as needed to include additional details or instructions specific to your game.
