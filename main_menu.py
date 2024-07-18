@@ -11,7 +11,6 @@ pygame.init()
 BLUE = (20, 100, 150)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-FONT_SIZE = 50
 
 BUTTON_HEIGHT = 60
 BUTTON_MARGIN = 20
@@ -22,7 +21,7 @@ pygame.display.set_caption('Scrabble')
 
 # Get screen dimensions
 WIDTH, HEIGHT = screen.get_size()
-TILE_SIZE = HEIGHT // 15
+FONT_SIZE = TILE_SIZE = HEIGHT // 15
 
 # Load font
 font = pygame.font.Font(None, FONT_SIZE)
