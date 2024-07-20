@@ -39,10 +39,6 @@ def teams_screen(screen, WIDTH, HEIGHT, font):
     return_button_width = button_text_rect.width + 40  # Add padding around the text
     return_button = pygame.Rect((WIDTH - return_button_width) // 2, HEIGHT - BUTTON_HEIGHT - 20, return_button_width, BUTTON_HEIGHT)
 
-    # Set a time delay for user interaction with buttons (2 seconds)
-    pygame.time.set_timer(pygame.USEREVENT, 2000)
-    buttons_enabled = False
-
     while True:
         screen.fill(BLACK)  # Fill the screen with black
 
@@ -53,7 +49,7 @@ def teams_screen(screen, WIDTH, HEIGHT, font):
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
-            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and buttons_enabled:
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 mouse_x, mouse_y = event.pos
 
                 # Check if 'Return to Main Menu' button is clicked
