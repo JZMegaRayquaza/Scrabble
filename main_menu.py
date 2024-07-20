@@ -21,7 +21,9 @@ pygame.display.set_caption('Scrabble')
 
 # Get screen dimensions
 WIDTH, HEIGHT = screen.get_size()
-FONT_SIZE = TILE_SIZE = HEIGHT // 15
+TILE_SIZE = HEIGHT // 15
+FONT_SIZE = TILE_SIZE - 10
+
 
 # Load font
 font = pygame.font.Font(None, FONT_SIZE)
