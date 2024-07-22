@@ -1,5 +1,7 @@
 import pickle
 import json
+import sys
+import os
 
 # Letter values
 LETTER_VALUES = {
@@ -106,6 +108,11 @@ class Game:
 		'''
 		Loads a serialized word list.
 		'''
+		# Check if running as a PyInstaller bundle
+		if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+			# Adjust file_path to point to the bundled location
+			file_path = os.path.join(sys._MEIPASS, file_path)
+
 		with open(file_path, 'rb') as file:
 			self.dictionary = pickle.load(file)
 
